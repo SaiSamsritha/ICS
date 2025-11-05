@@ -1,0 +1,56 @@
+Week-3 DVWA SQLi
+
+> /
+> cd var
+> cd www
+> cd html
+> ls
+> sudo git clone: https://github.com/digininja/Dvwa
+[NOTE:If you have capital DVWA or dvwa5 then change it to dvwa]
+
+> sudo mv dvwa5 dvwa
+> ls
+> sudo chmod -R 777 dvwa
+> cd dvwa
+> ls
+> cd config
+> ls
+> sudo cp config.inc.php.dist 
+config.inc.php.dist  config.inc.php
+
+> ls
+> sudo service mysql start
+> sudo mysql -u root -p
+
+>MariaDB[(none)]> show databases;
+> create database dvwa2;(filename on dvwa)
+> show databases;
+> create user dvwa2@127.0.0.1 identified by 'password';
+> grant all on dvwa2.* to dvwa2@127.0.0.1;
+> exit
+BYE
+
+> ls
+> sudo nano config.inc.php
+  change server: 127.0.0.1;
+  user: 'dvwa2'
+  Password: 'password'
+  then ctrl+O press enter and ctrl+X
+
+> /
+> cd etc
+> ls
+> cd php
+> ls
+8.2
+> cd 8.2
+> ls
+> cd apache2
+> ls
+> sudo nano php.ini
+   ctrl+f
+   fopen  -> allow_url_fopen = on   allow_url_include=on
+   ctrl+O ctrl+X
+> sudo service apache2 start
+> systemctl status apache2
+   Active : active(running)

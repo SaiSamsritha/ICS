@@ -1,0 +1,37 @@
+go to VMware
+
+go to browser  ->  type google.com  ->  https://github.com/rampriyakilari.com  ->  download malware.arr
+
+create new document  -> right click -> create document  -> in this type anything and save it
+
+=======
+
+in browser search filescan.io
+
+              |
+
+click on the image 
+
+              |
+
+open malware.arr
+
+              |
+
+after scanning
+
+              |
+
+click finish
+
+==========
+
+click on file.scan.io community
+ 
+             |
+
+again click on what you created
+
+             |
+
+Scan your file

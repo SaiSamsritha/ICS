@@ -1,0 +1,58 @@
+Week-4
+
+> cd/var/www/html
+> ls
+> sudo git clone https://gitHub.com/digininja/DVWA.git
+> ls
+> sudo mv DVWA dvwa
+> sudo chmod -R 777 dvwa
+> cd dvwa
+> ls
+> cd config
+> ls
+  config.inc.php.dist
+> sudo cp config.inc.php.dist config.inc.php
+> ls
+> sudo nano config.inc.php
+    Change Username : admin
+    Change Password : password
+> cat config.inc.php
+> sudo service msql start
+> sudo mysql -u root -p
+> create database dvwa;
+> create useradmin@127.0.0.1 identified by 'password';
+> grant all on dvwa * to admin@127.0.0.1;
+> exit
+> cd/etc/php/8.2/apache2
+> ls
+> sudo apache2
+> ls
+> sudo nano php.ini
+   press ctrl+w -> type fopen
+   change: url_include: 'On' ctrl+X+Y->moveout of screen
+> sudo service apache2 start
+> goto browser and give http://localhost/DVWA (or) http://127.0.0.1/DVWA/login.php
+  username: admin password : password
+> click create database we get http://127.0.0.1/DVWA/index.php
+> Go to DVWA security
+> click on impossible and set as low and click submit
+> Enter IP addresses
+  $ Multiple commands using pipe or;
+  $ 127.0.0.1
+  $ 127.0.0.1;ls
+  $ 127.0.0.1;ls..
+  $ 127.0.0.1;cat..,view.source.php
+  $ 127.0.0.1&&netuser
+---> open command prompt in the windows system and use the command
+> ping 0.0.0.0&netuser
+
+--->Now use the command ping 0.0.0.0&netuser
+---> replace & with &&
+
+---> click XSS Reflection
+     Enter any name in the text box and click submit
+---> It displays as
+     now instead pf any text let's try some script text
+     Eg: <script>alter('Hello World')</script>
+---> It displays Hello World 
+---> Click OK
