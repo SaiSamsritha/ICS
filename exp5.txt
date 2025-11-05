@@ -1,0 +1,35 @@
+ifconfig
+
+sudo service apache2 start
+
+sudo service MySQL start
+
+....in window cmd......
+
+ipconfig
+
+ping Linux ip address
+
+sudo iptables -A INPUT -s window ipaddress -j DROP   ----- in Linux
+
+ping Linux address ---- in cmd window
+ 
+........after getting time out time out ...........
+
+sudo iptables -D INPUT -s windowadress -j DROP ----- in Linux 
+
+ping Linux address ----- in cmd window
+
+......... after getting reply from  reply from ...........
+
+sudo iptables -A INPUT -s windowaddress -p tcp -destination -port 80 -j DROP 
+
+.......in browser type Linux ip address.......
+
+sudo iptables -D INPUT -s windowaddress -p tcp -destination -port -j DROP 
+ 
+......... in browser type ipaddress....
+
+
+
+
