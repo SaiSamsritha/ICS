@@ -8,10 +8,6 @@ cat enc.txt
 
 cat pubkey.pem
 
-cat enc.pem
-
-cat pubkey.pem
-
 openssl rsa -pubin -inform PEM -text -noout<pubkey.pem
 
 touch exploit.py
@@ -22,7 +18,33 @@ python exploit.py
 
 ls
 
-open pkeyutl -decrypt -inkey private.pem -in enc.txt -out dec.bin
+openssl pkeyutl -decrypt -inkey private.pem -in enc.txt -out dec.bin
+
+cat dec.bin
+
+=======================================================================
+
+or 
+
+mkdir rsa 
+
+cd rsa
+
+ls
+
+cat enc.txt
+
+cat pubkey.pem
+
+openssl rsa -pubin -inform PEM -text -noout<pubkey.pem
+
+pip install pycryptodome
+
+python exploit.py
+
+ls
+
+openssl pkeyutl -decrypt -inkey private.pem -in enc.txt -out dec.bin
 
 cat dec.bin
 
