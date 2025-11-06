@@ -15,7 +15,7 @@ Week-3 DVWA SQLi
 > ls
 > cd config
 > ls
-> sudo cp config.inc.php.dist 
+> sudo cp config.inc.php.dist config.inc.php
 config.inc.php.dist  config.inc.php
 
 > ls
@@ -54,3 +54,4 @@ BYE
 > sudo service apache2 start
 > systemctl status apache2
    Active : active(running)
+
