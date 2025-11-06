@@ -34,4 +34,12 @@ again click on what you created
 
              |
 
+
 Scan your file
+            |
+in browser open virustotal.com
+            |
+choose file
+            |
+choose malware.rar
+           
